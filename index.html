@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Start</title>
+
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+
+    <!-- aframe-extras (movement-controls, checkpoint-controls, gamepad-controls, keyboard-controls, touch-controls, trackpad-controls, animation-mixer, collada-model-legacy) -->
+    <!-- (fbx-model, object-model, nav-mesh, nav-agent, checkpoint, cube-env-map, grab, normal-material, sphere-collider, ocean) -->
+    <!-- https://github.com/c-frame/aframe-extras/tree/master -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.6.0/dist/aframe-extras.min.js"></script> -->
+
+    <!-- aframe-template-component (template) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/template/ -->
+    <!-- <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script> -->
+
+    <!-- aframe-environment (environment) -->
+    <!-- https://github.com/supermedium/aframe-environment-component -->
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+
+    <!-- aframe-mountain-component (mountain) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/mountain/ -->
+    <!-- <script src="https://unpkg.com/aframe-mountain-component@^0.3.3/aframe-mountain-component.min.js"></script> -->
+
+    <!-- aframe-locomotion (smooth-locomotion, snap-turn) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/aframe-locomotion@0.2.0/dist/aframe-locomotion.umd.min.js"></script> -->
+
+    <!-- super-hands -->
+    <!-- https://github.com/c-frame/aframe-super-hands-component -->
+    <!-- <script src="https://unpkg.com/super-hands@^3.0.5/dist/super-hands.min.js"></script> -->
+
+    <!-- aframe-text-geometry-component (text-geometry) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/text-geometry/ -->
+    <!-- <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script> -->
+
+    <!-- aframe-layout-component (layout) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/layout/ -->
+    <!-- <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script> -->
+
+    <!-- instanced-mesh (instanced-mesh-member, instanced-mesh) -->
+    <!-- https://github.com/diarmidmackenzie/instanced-mesh -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/diarmidmackenzie/instanced-mesh@v0.7.4/src/instanced-mesh.min.js"></script> -->
+
+    <!-- aframe-geometry-merger-component (geometry-merger) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/geometry-merger/ -->
+    <!-- <script src="https://unpkg.com/aframe-geometry-merger-component/dist/aframe-geometry-merger-component.min.js"></script> -->
+
+    <!-- aframe-particle-system-component (particle-system) -->
+    <!-- https://github.com/IdeaSpaceVR/aframe-particle-system-component -->
+    <!-- <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> -->
+
+    <!-- a-frame-component-postprocessing (post-processing) -->
+    <!-- https://github.com/akbartus/A-Frame-Component-Postprocessing -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/akbartus/A-Frame-Component-Postprocessing/dist/post-processing.min.js"></script> -->
+
+    <!-- aframe-log-component (log) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/log/ -->
+    <!-- <script src="https://unpkg.com/aframe-log-component/dist/aframe-log-component.min.js"></script> -->
+
+    <!-- aframe-camera-recorder-component (camera-recorder) -->
+    <!-- https://github.com/supermedium/superframe/tree/master/components/camera-recorder/ -->
+    <!-- <script src="https://unpkg.com/aframe-camera-recorder-component@1.5.0/dist/aframe-camera-recorder-component.min.js"></script> -->
+
+    <script src="/components/index.js" type="module"></script>
+</head>
+
+<body>
+    <a-scene xr-mode-ui="XRMode:ar;" environment="preset:default" webxr="requiredFeatures: local-floor; optionalFeatures: bounded-floor">
+        <a-assets></a-assets>
+
+        <a-entity id="rig" origin>
+            <a-camera wasd-plus look-controls></a-camera>
+            <a-entity oculus-touch-controls="hand:left;" fly="ascendEvent:gripchanged; accelerateEvent: triggerchanged"></a-entity>
+            <a-entity oculus-touch-controls="hand:right;" snap-turn></a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
