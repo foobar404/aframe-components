@@ -21,3 +21,4 @@ This repo contains small, reusable A-Frame components focused on locomotion, inp
 - https://github.com/supermedium/superframe/tree/master/components/state/
 - https://github.com/dmarcos/aframe-motion-capture-components
 - https://github.com/AdaRoseCannon/aframe-htmlmesh
+- https://github.com/harlyq/aframe-sprite-particles-component

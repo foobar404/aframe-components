@@ -78,16 +78,13 @@
         <a-assets></a-assets>
 
         <a-entity id="rig" origin>
-            <a-box scale="50 50 50" id="cutout" visible="false"></a-box>
             <a-camera wasd-plus look-controls></a-camera>
             <a-entity oculus-touch-controls="hand:left;"
                 fly="ascendEvent:gripchanged; accelerateEvent: triggerchanged"></a-entity>
             <a-entity oculus-touch-controls="hand:right;" snap-turn></a-entity>
         </a-entity>
 
-        <a-entity
-            gaussian_splatting="src: https://huggingface.co/cakewalk/splat-data/resolve/main/garden.splat; cutoutEntity: cutout"
-            rotation="-35 0 0" position="0 3.7 -2"></a-entity>
+        <a-entity gaussian_splatting="src: https://huggingface.co/cakewalk/splat-data/resolve/main/gs_FF3_lumix_4k%203.ply"></a-entity>
     </a-scene>
 </body>
 

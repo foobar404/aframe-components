@@ -18,3 +18,4 @@
 - decal
 - fog-volume
 - groups
+- collision  

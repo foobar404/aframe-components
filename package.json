@@ -1,0 +1,11 @@
+{
+  "name": "create-xr",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "create-xr": "./package/index.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.2"
+  }
+}
