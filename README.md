@@ -2,6 +2,7 @@
 
 This repo contains small, reusable A-Frame components focused on locomotion, input helpers, and scene utilities. Below is a short summary of each component and its notable schema options.
 
+
 - **world-grab**: let a controller "grab" and drag the world/rig. Key options: `event` (start), `endEvent`, `speed`, `invert`, `minMove`, `maxMove`.
 - **vignette**: screen-space donut/ring overlay parented to the camera. Key options: `color`, `radius`, `innerRadius`, `opacity`, `distance`.
 - **fly**: continuous flying locomotion (thumbstick + optional event-driven throttle/vertical). Key options: `speed`, `vSpeed`, `turnSpeed`, `accelerateEvent`, `verticalEvent`, `deadzone`, `cameraRig`.
