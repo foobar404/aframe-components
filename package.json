@@ -2,9 +2,7 @@
   "name": "create-xr",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "test": "echo \"No tests yet\""
-  },
+  "scripts": {},
   "bin": {
     "create-xr": "./package/index.js"
   },
