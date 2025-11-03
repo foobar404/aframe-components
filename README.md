@@ -6,10 +6,18 @@ This repository is meant to be an *easy to use* starter kit of the best / most c
 <img src="./assets/demo.png" /> 
 
 # Getting Started
+
+## Template
 To install the template files, use:
 ```
 npm create xr
 ```
+to run the project use:
+```
+npm run dev
+```
+
+## Components
 To import all **AFRAME** components into your project (done automatically when using the template), use:
 ```
 <script src="https://cdn.skypack.dev/pin/gh@v2.8.9-pbIyFCSRoTBr23wffpcU/mode=raw,min/foobar404/webxr-sdk@main/components/index.js"></script>
