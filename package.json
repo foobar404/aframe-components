@@ -1,6 +1,6 @@
 {
   "name": "create-xr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "scripts": {},
   "repository": {
@@ -9,9 +9,12 @@
   },
   "homepage": "https://github.com/foobar404/webxr-sdk",
   "bin": {
-    "create-xr": "./package/index.js"
+    "create-xr": "./package/index.js",
+    "xr": "./package/index.js"
   },
   "dependencies": {
-    "fs-extra": "^11.3.2"
+    "cli-progress": "^3.12.0",
+    "fs-extra": "^11.3.2",
+    "inquirer": "^12.10.0"
   }
 }
