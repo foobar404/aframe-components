@@ -19,3 +19,12 @@
 - fog-volume
 - groups
 - collision  
+
+# References
+- https://github.com/c-frame/aframe-physics-system?tab=readme-ov-file#installation
+- https://github.com/fernandojsg/aframe-teleport-controls
+- https://github.com/rdub80/aframe-gui
+- https://github.com/supermedium/superframe/tree/master/components/state/
+- https://github.com/dmarcos/aframe-motion-capture-components
+- https://github.com/AdaRoseCannon/aframe-htmlmesh
+- https://github.com/harlyq/aframe-sprite-particles-component

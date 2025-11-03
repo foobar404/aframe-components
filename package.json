@@ -1,8 +1,13 @@
 {
   "name": "create-xr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foobar404/webxr-sdk.git"
+  },
+  "homepage": "https://github.com/foobar404/webxr-sdk",
   "bin": {
     "create-xr": "./package/index.js"
   },

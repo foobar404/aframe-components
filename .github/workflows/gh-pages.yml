@@ -1,0 +1,32 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install and build
+        working-directory: ./package/template
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./package/template/dist
+          publish_branch: gh-pages
