@@ -1,14 +1,15 @@
-# 😎 Hello XR 
+# 😎 Hello XR - <a href="https://foobar404.github.io/webxr-sdk/">Demo</a>
 [![npm version](https://img.shields.io/npm/v/create-xr.svg)](https://www.npmjs.com/package/create-xr) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm downloads](https://img.shields.io/npm/dm/create-xr.svg)](https://www.npmjs.com/package/create-xr)
 
 This repository is meant to be an *easy to use* starter kit of the best / most current 3D and XR libraries on the web, with some of my own contributions as well. Packages such as **AFRAME**, **THREE.js**, the **IWSDK** by Meta, and a few others, all bundled using **Vite**, with a simple `npm create xr` command to generate a template project with all the functionality you would expect from a *modern day game engine*, like physics, locomotion, controller/hand tracking, skyboxes, gltf model rendering, scene editor, XR emulator, and many more. 
 
-<img src="./assets/demo.png" /> 
+<a href="https://foobar404.github.io/webxr-sdk/" target="_blank"><img src="./assets/demo.png" /></a>
 
 # Getting Started
+Get up and running with web xr development with just a few commands!
 
 ## Template
-To install the template files, use:
+To create a new Web XR project using the template, use:
 ```
 npm create xr
 ```
